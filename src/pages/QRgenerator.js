@@ -4,11 +4,28 @@ import {ArrowBack, GetApp} from '@material-ui/icons'
 import { Link } from "react-router-dom";
 import QRcode from 'qrcode.react'
 
+/**
+ * It builds the QRgenerator page.
+ * @function
+ * @public
+ * @returns {all} QRgenerator page 
+ */
 function QRgenerator() {
     const [qr, setQr] = useState('lintangwisesa');
+    /**
+     * It triggers by event and set target value as current qr.
+     * @function
+     * @param {object} event  
+     * @public
+     */
     const handleChange = (event) => {
         setQr(event.target.value);
     };
+    /**
+     * It downloads qr.
+     * @function  
+     * @public
+     */
     const downloadQR = () => {
         const canvas = document.getElementById("myqr");
         const pngUrl = canvas

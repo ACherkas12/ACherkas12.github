@@ -4,14 +4,32 @@ import {ArrowBack} from '@material-ui/icons'
 import { Link } from "react-router-dom";
 import QrScan from 'react-qr-reader'
 
+/**
+ * It builds the QRscanner page.
+ * @function
+ * @public
+ * @returns {all} QRscanner page 
+ */
 function QRscanner() {
 
     const [qrscan, setQrscan] = useState('No result');
+    /**
+     * It sets the result data of scan as current QR.
+     * @function
+     * @param {object} data  
+     * @public
+     */
     const handleScan = data => {
         if (data) {
             setQrscan(data)
         }
     }
+    /**
+     * It shows error.
+     * @function
+     * @param {object} err  
+     * @public
+     */
     const handleError = err => {
     console.error(err)
     }

@@ -3,6 +3,12 @@ import Icon from '@mdi/react'
 import { mdiQrcode, mdiQrcodeScan } from '@mdi/js';
 import { Link } from "react-router-dom";
 
+/**
+ * It builds the home page.
+ * @function
+ * @public
+ * @returns {all} home page 
+ */
 function Home() {
 
     return (

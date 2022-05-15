@@ -10,6 +10,12 @@ import Home from './pages/Home'
 import QRgen from './pages/QRgenerator'
 import QRscan from './pages/QRscanner'
 
+/**
+ * It builds the app.
+ * @function
+ * @public
+ * @returns {all} app with routes for all app's pages. 
+ */
 function App() {
   return (
     <div className="App">
